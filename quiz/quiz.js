@@ -168,10 +168,21 @@ function prev_question(){
     }
 }
 
+function sum(){
+    sum = 0
+    for(i of score_array){
+        sum += i;
+    }
+    score = sum;
+}
 
 function submission(){
     sum();
-    container.innerHTML= `the score is: ${score}`;
+    container.innerHTML= 
+    `<div class="score_container">
+        <h2>Your Score:</h2> <p>${score}</p>
+    </div>
+    `;
     qst_navigation.innerHTML = ""
 }
 
@@ -180,9 +191,11 @@ function edit_qst_nav(){
     if(index == 0){
         qst_navigation.innerHTML = 
         `
+        <button id="prev_btn">Previous</button>
         <button id="nxt_btn"> Next</button>
         `
-        
+        let prev_button = document.getElementById('prev_btn');
+        prev_button.style.visibility = 'hidden';
     } else if( index == score_array.length-1){
         qst_navigation.innerHTML = 
         `
@@ -215,13 +228,7 @@ function add_events(){
 }
 
 
-function sum(){
-    sum = 0
-    for(i of score_array){
-        sum += i;
-    }
-    score = sum;
-}
+
 
 
 
