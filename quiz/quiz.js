@@ -43,7 +43,7 @@ const questions = [
         correct_ans: 1
     },
     {
-        question: "What was the first president of Malawi?",
+        question: "Who was the first president of Malawi?",
         answer_1: "Lazarus Chakwera",
         answer_2: "John Chilembwe",
         answer_3: "Hastings Kamuzu Banda",
@@ -88,7 +88,7 @@ const questions = [
         correct_ans: 1
     },
     {
-        question: "In whick continent is Malawi Found?",
+        question: "In which continent is Malawi Found?",
         answer_1: "Asia",
         answer_2: "Africa",
         answer_3: "South America",
@@ -99,60 +99,6 @@ const questions = [
 ];
 
 let score_array = questions.map(x => 0 );
-
-// score_array[0] = 1;
-
-// function btn_state(value){
-//     console.log(value);
-//     if (value == 0){
-//         console.log('equal to zero');
-//         prev_button.remove()
-//         next_button.style.display = 'visible';
-        
-//      }
-//      else if (0<value && value < score_array.length -1){
-//         console.log('in between');
-//         prev_button.style.display = 'visible';
-//         next_button.style.display = 'visible';
-//     }
-//      else{
-//         console.log('maximum reached');
-//         prev_button.style.display = 'visible';
-//         next_button.style.display = 'visible';
-// }
-
-//     add_events();
-// }
-
-
-function edit_qst_nav(){
-    if(index == 0){
-        qst_navigation.innerHTML = 
-        `
-        <button id="nxt_btn"> Next</button>
-        `
-        
-    } else if( index == score_array.length-1){
-        qst_navigation.innerHTML = 
-        `
-        <button id="prev_btn">Previous</button>
-        <button id="sub_btn">Submit</button>
-
-        `
-        let sub_button = document.getElementById('sub_btn');
-        sub_button.addEventListener('click', sub_ans);
-    } else{
-        qst_navigation.innerHTML = 
-        `
-        <button id="prev_btn">Previous</button>
-        <button id="nxt_btn"> Next</button>
-        `
-    }
-    
-    add_events();
-        
-    
-}
 
 
 function load_question(qst_num){
@@ -225,10 +171,43 @@ function prev_question(){
 }
 
 
-function sub_ans(){
-    console.log('soething')
+function submission(){
+    sum();
+    container.innerHTML= `the score is: ${score}`;
+    qst_navigation.innerHTML = ""
 }
 
+
+function edit_qst_nav(){
+    if(index == 0){
+        qst_navigation.innerHTML = 
+        `
+        <button id="nxt_btn"> Next</button>
+        `
+        
+    } else if( index == score_array.length-1){
+        qst_navigation.innerHTML = 
+        `
+        <button id="prev_btn">Previous</button>
+        <button id="sub_btn">Submit</button>
+
+        `
+        let prev_button = document.getElementById('prev_btn');
+        let sub_button = document.getElementById('sub_btn');
+        prev_button.addEventListener('click', prev_question);
+        sub_button.addEventListener('click', submission);
+    } else{
+        qst_navigation.innerHTML = 
+        `
+        <button id="prev_btn">Previous</button>
+        <button id="nxt_btn"> Next</button>
+        `
+    }
+    
+    add_events();
+        
+    
+}
 
 function add_events(){
     let next_button = document.getElementById('nxt_btn');
