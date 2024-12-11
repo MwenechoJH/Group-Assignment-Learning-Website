@@ -1,16 +1,75 @@
+.main_container{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+    background-color: rgba(150, 248, 255, 0.487);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+
 .first{
-    background-color: rgb(255, 255, 255);
+    color: black;
 }
 .ans_container{
     display: flex;
     flex-direction: column;
 }
 
+.sub_ans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 40px;
+    background-color: rgb(21, 29, 105);
+    color: white;
+    border-radius: 5px;
+}
+
 .ans_btn{
+    border: 0px;
+    margin: 5px;
+    height: 40px;
     background-color: black;
     color: white;
+    border-radius: 5px;
+}
+
+.ans_btn:hover{
+    opacity: 0.5;
+}
+.ans_btn:focus{
+    opacity: 0.5;
+}
+
+.qst_nav{
+    display: flex;
+    justify-content: space-between;
 }
 .qst_nav button{
-    background-color: rgb(1, 29, 32);
-    color: rgb(222, 252, 255);
+    border: 0px;
+    background-color: rgb(16, 10, 41);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 5px;
+    width: 20%;
+}
+#nxt_btn{
+    display: flex;
+    right: 10px;
+    justify-self: baseline;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub_btn{
+    background-color: green;
 }
