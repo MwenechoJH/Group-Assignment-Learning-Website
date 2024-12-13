@@ -7,12 +7,24 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-nav, nav ul{
+nav, nav ul, nav a{
     display: flex;
     flex-direction: row;
     list-style: none;
     text-decoration: none;
+    color: white;
+    justify-content: space-around
 }
+nav ul, nav span{
+    display: flex;
+    width: 30vw;
+    height: 100%;
+    align-items: center;
+}
+.sign-in-up span{
+    justify-content: center;
+}
+
 
 .navigation-bar nav{
     justify-content: space-between;
@@ -26,7 +38,6 @@ nav, nav ul{
 .hello-container{
     display: flex;
     justify-items: center;
-    justify-content: space-around;
 
     background-image: url(assets/never-stop-learning-3653430_640.jpg);
     background-repeat: no-repeat;
@@ -37,14 +48,21 @@ nav, nav ul{
 
 .hello-container div{
     display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 50, 0.2);
+    width: 100%;
+    height: 100%;
+}
+.hello-container div div{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     justify-content: space-around;
 
     color: white;
-    margin-top: 20%;
-    width: 40%;
+    padding: 20%;
+    width: 100%;
 }
 
 /* img{
@@ -57,7 +75,7 @@ nav, nav ul{
 } */
 
 
-.overlay{
+/* .overlay{
     padding-top: 0%;
     border-radius: 10px;
     position: sticky;
@@ -68,7 +86,7 @@ nav, nav ul{
     font-size: 40px;
     font-weight: 600;
     display: flex; flex-direction: row; gap: 30px; justify-content: center;
-}
+} */
 
 .the3boxes{
     height: 300px;
@@ -82,7 +100,7 @@ nav, nav ul{
 
 .upperNlowerBox{
     justify-items: center;
-    height: 250px;
+    height: 50vh;
     width: 100%;
     padding-top: 70px;
 }
