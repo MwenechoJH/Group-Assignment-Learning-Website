@@ -7,61 +7,67 @@
     <link rel="stylesheet" href="platform-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <img src="./Assets/never-stop-learning-3653430_640.jpg" alt="library">
-        <div class="overlay" style="padding-top:40px ;height: 60px; margin-top:0px;">
-            <h3 style=" margin-left: 0px;">Learners Corner</h3>
+    <div class="main-container">
+        <header>
+            <div class="navigation-bar" style="display: flex; flex-direction: row;">
+                <nav>
+                    <span> Learner's Corner</span>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about/about.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Curriculum.html">Curriculum</a> </li>
+                    </ul>
+                    <ul style="display: flex; flex-direction: row;gap: 20;">
+                        <li style=" background-color: rgb(38, 140, 33);"><a>Sign up</a></li>
+                        <li style=" background-color: rgb(38, 140, 33);"><a>Sign in</a></li>
+                    </ul>  
+                </nav>     
+            </div>
 
+            <div class="hello-container">
+                <div>
+                    <h1>Welcome to Learners Corner</h1>
+                    <p>"Long-term results come from consistency."</p>
+                    <h4>Shane Parrish</h4>
+                    <button style=" background-color: brown;">About Us</button>
+                </div>
+            </div>
+            
+        </header>
+    
+        <main>
+    
+            <div class="upperNlowerBox">
+                <h1> The World of Online Learning</h1>
+                <p>What you can find interesting</p>
+            </div>
+    
             <div style="display: flex; flex-direction: row; gap: 30px;">
-                <a href="home.html">Home</a>
-                <a href="about/about.html">About</a>
-                <a href="Contact.html">Contact</a>
-                <a href="Curriculum.html">Curriculum</a>            
+                <div class="the3boxes">
+                    <h3>Lessons</h3>
+                    <p>Our curriculum contains tones of lessons in different subjects</p>
+                </div>
+                <div class="the3boxes">
+                    <h3>Quizzes</h3>
+                    <p>Our curriculum contains tones of quizzes in different subjects</p>
+                </div>
+                <div class="the3boxes">
+                    <h3>Content Creation</h3>
+                    <p>Create a teacher account to create content</p>
+                </div>
             </div>
-
-            <div style="display: flex; flex-direction: row;gap: 20;">
-                <h3>Sign up</h3>
-                <button style=" background-color: rgb(38, 140, 33);">Sign in</button>
-            </div>      
-        </div>
-
-        <div class="hello-container">
-            <h1>Welcome to Learners Corner</h1>
-            <p>"Long-term results come from consistency."</p>
-            <p>Shane Parrish</p>
-            <button style=" background-color: brown;">About Us</button>
-        </div>
-        
-    </header>
-
-    <main>
-
-        <div class="upperNlowerBox">
-            <h1> The World of Online Learning</h1>
-            <p>What you can find interesting</p>
-        </div>
-
-        <div style="display: flex; flex-direction: row; gap: 30px;">
-            <div class="the3boxes">
-                <h3>Lessons</h3>
-                <p>Our curriculum contains tones of lessons in different subjects</p>
+    
+            <div class="upperNlowerBox">
+                <h1>Join Our Community</h1>
+                <button style="background-color: brown;">Join</button>
             </div>
-            <div class="the3boxes">
-                <h3>Quizzes</h3>
-                <p>Our curriculum contains tones of quizzes in different subjects</p>
-            </div>
-            <div class="the3boxes">
-                <h3>Content Creation</h3>
-                <p>Create a teacher account to create content</p>
-            </div>
-        </div>
+    
+        </main>
 
-        <div class="upperNlowerBox">
-            <h1>Join Our Community</h1>
-            <button style="background-color: brown;">Join</button>
-        </div>
-
-    </main>
+    </div>
+    
 </body>
 </html>
