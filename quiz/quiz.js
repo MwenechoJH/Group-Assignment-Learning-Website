@@ -179,8 +179,13 @@ function sum(){
 function submission(){
     sum();
     container.innerHTML= 
-    `<div class="score_container">
+    `<div >
+    <div class="score_container">
         <h2>Your Score:</h2> <p>${score}</p>
+        </div>
+        <div>
+        <a href="../index.html"><button class="home_btn"><b> Home</b> </button></a>
+        </div>
     </div>
     `;
     qst_navigation.innerHTML = ""

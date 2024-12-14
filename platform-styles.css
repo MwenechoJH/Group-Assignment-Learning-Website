@@ -19,6 +19,7 @@ nav ul, nav span{
     display: flex;
     height: 100%;
     align-items: center;
+    padding-left: 0px;
 }
 .sign-in-up span{
     justify-content: center;
@@ -97,6 +98,14 @@ nav ul, nav span{
     padding: 20px;
     padding-bottom: 50px
 }
+.the3boxes a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 50);
+}
 
 p{
     text-align: center;
@@ -107,7 +116,7 @@ h1, h2, h3 {
     padding:20px;
 }
 
-main i{
+main i {
     font-size: 5rem;
 }
 
@@ -161,6 +170,12 @@ footer a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .upperNlowerBox h1{
+        font-size: 2.1rem;
+    }
+    .sub-container h2{
+        font-size: 1.2rem;
     }
     .the3boxes{
         width: 80vw;
