@@ -3,110 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="platform-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <title>REGISTER FORM</title>
+</head> 
+
+<style>
+        
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 700px;
+        background-color: rgb(153, 210, 246);
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+    }
+    h1{
+        text-align: center;
+        color: rgb(21, 21, 22);
+    }
+    button{
+        background-color: rgb(33, 68, 225);
+        color: aliceblue;
+    }
+    div{
+        text-align: center;
+    }
+    input{
+        height: 70px;
+        border-radius: 20px;
+    }
+    button{
+        height: 100px;
+        margin-top: 20px;
+        border-radius: 20px
+    }
+    .radio_container{
+        display: flex;
+        align-items: center;
+    }
+    .survey_label{
+        font-weight: bold;
+    }
+    
+</style>
 
 <body>
-    <div class="main-container">
-        <header>
-            <div class="navigation-bar" style="display: flex; flex-direction: row;">
-                <nav>
-                    <span style="padding-left: 10px;"> Learner's Corner</span>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about/about.html">About</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                        <li><a href="Curriculum.html">Curriculum</a> </li>
-                    </ul>
-                    <span class="sign-in-up" style="display: flex; flex-direction: row;gap: 20; justify-content: center;">
-                        <span><a href="#">Sign up</a></span>
-                        <span style=" background-color: rgb(38, 140, 33);"><a href="#">Sign in</a></span>
-                    </span>  
-                </nav>     
-            </div>
+    <form action="">
 
-            <div class="hello-container">
-                <div>
-                    <div>
-                        <h1>Welcome to Learners Corner</h1>
-                        <p>"Long-term results come from consistency."</p>
-                        <h2>Shane Parrish</h2>
-                        <button style=" background-color: brown;">About Us</button>
-                    </div>
-                </div>
-            </div>
-            
-        </header>
-    
-        <main>
-            <div class="sub-container">
+        <h1>REGISTER FORM</h1>
+        <label for="username">Username</label>
+        <input id="user_name" type="text" placeholder="Enter username" required>
 
-                <div class="upperNlowerBox">
-                    <i class="fas fa-globe"></i>
-                    <h1> The World of Online Learning</h1>
-                </div>
+        <label for="full_name">Full name</label>
+        <input id="full_name" type="text" placeholder="Enter full name" required>
 
-                <h2>What you can find interesting</h2>
-                <div class="box-container">
-                    
-                    <div class="the3boxes">
-                        <a href="#">
-                            <i class="fas fa-pen"></i>
-                            <h3>Lessons</h3>
-                        </a>
-                        
-                        <p>Our curriculum contains tones of lessons in different subjects</p>
-                    </div>
-                    <div class="the3boxes">
-                        <a href="https://mwenechojh.github.io/Group-Assignment-Learning-Website/quiz/quiz.html">
-                            <i class="fa-solid fa-table-list"></i>
-                            <h3>Quizzes</h3>
-                        </a>
-                        
-                        <p>Our curriculum contains tones of quizzes in different subjects</p>
-                    </div>
-                    <div class="the3boxes">
-                        <a href="#">
-                            <i class="fas fa-book"></i>
-                            <h3>Content Creation</h3>
-                        </a>
-                        
-                        <p>Create a teacher account to create content</p>
-                    </div>
-                </div>
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="Enter email address" required>
+
+        <label for="phone_number">Phone number</label>
+        <input id="phone_number" type="text" placeholder="Enter phone number" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="text" placeholder="Create password" required>
+
+        <h2>Are you a Student or Teacher?</h2>
+        <p>Please select your occupation below to create your account</p>
+
+        <label for="occupation">Select occupation</label>
+
+        <div class="radio_container">
+
+        <input type="radio" name="occupation" id="Student">
+        <label for="student">Student</label>
+
+        </div>
+
+        <div class="radio_container">
+
+        <input type="radio" name="occupation" id="Teacher">
+        <label for="teacher">Teacher</label>
+
+        </div>
+
+        <button id="Create_account">CREATE ACCOUNT</button>
+        <div class="Link">
+            <p>Already have an account? <a href="signin.html">Sign in</a></p>
+        </div>
         
-                <div class="upperNlowerBox">
-                    <h1>Join Our Community</h1>
-                    <button style="background-color: brown;">Join</button>
-                </div>   
-            </div>
-    
-        </main>
-        <hr>
-        <footer>
-            <div class="footer-container">
-                <div>
-                    <h3 style="color: brown;">Learner's corner</h3>
-
-                </div>
-                <div>
-                    <span> 
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a> 
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </span>
-
-                </div>
-            </div>
-            <div class="col-sm-6">
-                Copyright &copy; Group Work
-            </div>
-        </footer>
-
-    </div>
+    </form>
     
 </body>
 </html>
