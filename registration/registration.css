@@ -13,13 +13,15 @@ body{
 }
 .form-head{
     display: flex;
-    width: 45%;
-    height: 20vh;
-    padding-top: 20px;
     justify-self: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 45%;
+    height: 20vh;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    
 }
 
 
@@ -28,17 +30,45 @@ form{
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 80vh;
+    height: 60vh;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
     margin: auto;
 }
+form label{
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+}
 
 input[type="text"], input[type="email"]{
     outline: none;
     border: none;
-    box-shadow: 0px 0px 1px 2px brown;
+    box-shadow: 0px 0px 0.5px 1px rgba(165, 42, 42, 0.497);
+    height: 2rem;
+    padding-left: 4%;
+}
+.occupation-container{
+    height: 20vh;
+    font-size: 0.9rem;
+}
+.radio_container{
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+}
+.survey_label{
+    font-weight: bold;
+}
+.form-footer{
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1, h2,p{
@@ -61,19 +91,32 @@ button{
     background-color: rgb(102, 176, 255, 0.5);
 }
 
+.sub-container:nth-child(2) div{
+    width: 60%;
+}
+
 input{
     height: 70px;
     border-radius: 20px;
 }
+/* the buttons */
 button{
-    height: 100px;
-    margin-top: 20px;
-    border-radius: 20px
-}
-.radio_container{
     display: flex;
     align-items: center;
+    justify-self: center;
+    justify-content: center;
+    height: 2rem;
+    width: 8rem;
 }
-.survey_label{
-    font-weight: bold;
+#sign-up{
+    background-color: black;
+    color: white;
+    border: none;
+    
+}
+#sign-in{
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.5px solid blue;
+    border-radius: 100px;
 }

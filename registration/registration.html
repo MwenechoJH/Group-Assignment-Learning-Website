@@ -39,31 +39,36 @@
                 <label for="password">Password</label>
                 <input id="password" type="text" placeholder="Create password" required>
         
-                <h2>Are you a Student or Teacher?</h2>
-                <p>Please select your occupation below to create your account</p>
+                <div class="occupation-container">
+                    <h2>Are you a Student or Teacher?</h2>
         
-                <label for="occupation">Select occupation</label>
-        
-                <div class="radio_container">
-        
-                <input type="radio" name="occupation" id="Student">
-                <label for="student">Student</label>
-        
-                </div>
-        
-                <div class="radio_container">
-        
-                <input type="radio" name="occupation" id="Teacher">
-                <label for="teacher">Teacher</label>
-        
-                </div>
-        
-                <button id="Create_account">CREATE ACCOUNT</button>
-                <div class="Link">
-                    <p>Already have an account? <a href="signin.html">Sign in</a></p>
+                    <label for="occupation">Please select your occupation below to create your account</label>
+            
+                    <div class="radio_container">
+            
+                        <input type="radio" name="occupation" id="Student">
+                        <label for="student">Student</label>
+            
+                    </div>
+            
+                    <div class="radio_container">
+            
+                        <input type="radio" name="occupation" id="Teacher">
+                        <label for="teacher">Teacher</label>
+            
+                    </div>
                 </div>
                 
             </form>
+            <div class="form-footer">
+                <button id="sign-up">SIGN UP</button>
+                <p>Or Login using</p>
+                <span>
+                    <i>G</i>
+                    <i>T</i>
+                    <i>F</i>
+                </span>
+            </div>
 
         </div>
         <div class="sub-container">
@@ -73,6 +78,7 @@
                     Login to your account so you can continue 
                     enjoyin our online lessons and quizzes
                 </p>
+                <button id="sign-in">SIGN IN</button>
             </div>
             
         </div>
