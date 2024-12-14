@@ -120,3 +120,14 @@ button{
     border: 0.5px solid blue;
     border-radius: 100px;
 }
+
+@media (max-width:600px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+    .sub-container{
+        height: 100vh;
+    }
+}
