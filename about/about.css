@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav, nav ul, nav a{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    justify-content: space-around
+}
+nav ul, nav span{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0px;
+}
+.sign-in-up span{
+    justify-content: center;
+    width: 100%;
+}
+
+.sub-container:nth-child(1){
+    margin-top: 50px;
+}
+
+
+.navigation-bar nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(0, 0, 50);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-container div {
+    padding: 3vw;
+    padding-left: 0px;
+}
+footer a{
+    color: rgb(59, 170, 254);
+}
