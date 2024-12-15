@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 body{
     padding: 0;
     margin: 0;
+    font-family:'poppins', sans-serif;
 }
 
 nav, nav ul, nav a{
@@ -18,16 +22,6 @@ nav ul, nav span{
     padding-left: 0px;
     margin: 0px;
 }
-.sign-in-up span{
-    justify-content: center;
-    width: 100%;
-}
-
-.sub-container:nth-child(1){
-    margin-top: 50px;
-}
-
-
 .navigation-bar nav{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -36,6 +30,69 @@ nav ul, nav span{
     height: 50px;
     background-color: rgb(0, 0, 50);
 }
+.sign-in-up span{
+    justify-content: center;
+    width: 100%;
+}
+
+.sub-container:nth-child(1){
+    margin-top: 50px;
+    width: 40%;
+    height: 20vh;
+    font-size: 2.2rem;
+}
+.sub-container:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+.sub-container:nth-child(2) div{
+    width: 48%;
+    font-size: 3rem;
+}
+#student-learning{
+    width: 100%;
+}
+
+#founder-image{
+    width: 20%;
+}
+.sub-container:nth-child(3), .sub-container:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.sub-container:nth-child(3){
+    background-color: rgba(128, 128, 128, 0.5);
+    justify-content: space-evenly;
+}
+.sub-container:nth-child(4){
+    justify-self: center;
+    width: 70%;
+}
+.subjects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 10%;
+}
+.subjects button{
+    height: 2rem;
+    border: none;
+    margin: 5px;
+    box-shadow: 0px 2px 1px 0.2px rgb(0, 0, 0, 0.2);
+    color: blue
+}
+.sub-container:nth-child(3) button{
+    height: 2rem;
+    border: none;
+    box-shadow: 0px 2px 1px 0.2px rgb(0, 0, 0, 0.2);
+}
+
+
 
 .footer-container{
     display: flex;
@@ -45,7 +102,35 @@ nav ul, nav span{
 .footer-container div {
     padding: 3vw;
     padding-left: 0px;
+    padding-top: 0px;
 }
 footer a{
     color: rgb(59, 170, 254);
+}
+footer h3{
+    color: brown;
+    margin: 0px
+}
+
+h2{
+    color: grey;
+}
+
+@media (max-width:600px) {
+    .sub-container:nth-child(1){
+        font-size: 1.5rem;
+    }
+
+    .sub-container:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* margin: 0px; */
+    }
+    .sub-container:nth-child(2) div{
+        width: 95%;
+    }
+    .subjects{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
